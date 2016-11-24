@@ -1,0 +1,127 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="ElectricalParameters.FindViews.Digital"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ElectricalParameters.FindViews"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:ElectricalParameters.Models"
+                        
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="数码名称:" FontSize="16"
+                           Grid.Column="0" Grid.Row="0"/>
+                <TextBlock x:ConnectionId='7' Name="DigitalNameTextBlock" FontSize="16"
+                           Grid.Row="0" Grid.Column="1"/>
+
+                <TextBlock Text="有效像素:" FontSize="16"
+                           Grid.Column="0" Grid.Row="1"/>
+                <TextBlock x:ConnectionId='8' Name="EffectivePixelsTextBlock" FontSize="16"
+                           Grid.Row="1" Grid.Column="1"/>
+
+                <TextBlock Text="光学变焦:" FontSize="16"
+                           Grid.Column="0" Grid.Row="2"/>
+                <TextBlock x:ConnectionId='9' Name="OpticalZoomTextBlock" FontSize="16"
+                           Grid.Row="2" Grid.Column="1"/>
+
+                <TextBlock Text="数码变焦:" FontSize="16"
+                           Grid.Column="0" Grid.Row="3"/>
+                <TextBlock x:ConnectionId='10' Name="DigitalZoomTextBlock" FontSize="16"
+                           Grid.Row="3" Grid.Column="1"/>
+
+                <TextBlock Text="最高分辨率:" FontSize="16"
+                           Grid.Column="0" Grid.Row="4"/>
+                <TextBlock x:ConnectionId='11' Name="ResTextBlock" FontSize="16"
+                           Grid.Row="4" Grid.Column="1"/>
+
+                <TextBlock Text="镜头类型:" FontSize="16"
+                           Grid.Column="0" Grid.Row="5"/>
+                <TextBlock x:ConnectionId='12' Name="LensTypeTextBlock" FontSize="16"
+                           Grid.Row="5" Grid.Column="1"/>
+            </Grid>
+        </ScrollViewer>
+        <GridView x:ConnectionId='2' Name="DigitalGridView"  Grid.Row="1"
+                  IsItemClickEnabled="True"
+                                                       
+                  HorizontalAlignment="Stretch"
+                   VerticalAlignment="Stretch"
+                                                     >
+            <GridView.ItemTemplate>
+                <DataTemplate                              >
+                    <Grid x:ConnectionId='4'>
+                        <Image x:ConnectionId='5'                                />
+                        <Border Background="#A5000000" Height="48" VerticalAlignment="Bottom">
+                            <TextBlock x:ConnectionId='6'                             
+                                       HorizontalAlignment="Center" 
+                                       Foreground="White"
+                                       FontSize="28"/>
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+        <SplitView x:ConnectionId='3' Name="DigitalSplitView" Grid.Row="1"
+                   DisplayMode="Overlay">
+            <SplitView.Pane>
+                <Pivot>
+                    <PivotItem Header="数码相机">
+                        <GridView>
+                            <Button Content="Canon" FontSize="12"
+                                        Width="90"/>
+                                <Button Content="Nikon" FontSize="12"
+                                        Width="90"/>
+                                <Button Content="SONY" FontSize="12"
+                                        Width="90"/>
+                                <Button Content="CASIO" FontSize="12"
+                                        Width="90"/>
+                                <Button Content="Kodak" FontSize="12"
+                                        Width="90"/>
+                                <Button Content="Leica" FontSize="12"
+                                        Width="90"/>
+                                <Button Content="FUJIFILM" FontSize="12"
+                                        Width="90"/>
+                                <Button Content="PENTAX" FontSize="12"
+                                        Width="90"/>
+                                <Button Content="SAMSUNG" FontSize="12"
+                                        Width="90"/>
+                        </GridView>
+                    </PivotItem>
+                </Pivot>
+            </SplitView.Pane>
+        </SplitView>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar IsOpen="False"
+                    ClosedDisplayMode="Compact">
+            <AppBarButton x:ConnectionId='13' Name="DigitalAudioListAppBarButton"
+                                                                    
+                          Label="列表"
+                          Icon="List"/>
+            <AppBarButton x:ConnectionId='14' Name="H0meAppBarButton"
+                          Label="主页"
+                          Icon="Home"
+                                                        />
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
+

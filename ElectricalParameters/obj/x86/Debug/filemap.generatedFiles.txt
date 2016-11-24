@@ -1,0 +1,4 @@
+obj\x86\Debug\filemap.pri
+obj\x86\Debug\filemap.map.txt
+obj\x86\Debug\filemap.language-mi-latn.pri
+obj\x86\Debug\filemap.language-mi-latn.map.txt

@@ -1,0 +1,2 @@
+MainPackage=D:\Code\ElectricalParameters\ElectricalParameters\bin\x64\Debug\ElectricalParameters_1.0.0.0_x64_Debug.appx
+SymbolPackage=D:\Code\ElectricalParameters\ElectricalParameters\AppPackages\ElectricalParameters_1.0.0.0_Debug_Test\ElectricalParameters_1.0.0.0_x64_Debug.appxsym

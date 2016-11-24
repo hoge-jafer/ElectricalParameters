@@ -1,0 +1,20 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-mi-latn"
+"ResourceDimensions"		"language-mi"
+
+[Files]
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\split.language-mi-latn.pri"			"resources.pri"
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\PackageLayout\Images\PhoneImage\Mi\note.jpg"			"Images\PhoneImage\Mi\note.jpg"
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\PackageLayout\Images\PhoneImage\Mi\max.jpg"			"Images\PhoneImage\Mi\max.jpg"
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\PackageLayout\Images\PhoneImage\Mi\m5.jpg"			"Images\PhoneImage\Mi\m5.jpg"
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\PackageLayout\Images\PhoneImage\Mi\hmpro.jpg"			"Images\PhoneImage\Mi\hmpro.jpg"
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\PackageLayout\Images\PhoneImage\Mi\hmnote4.jpg"			"Images\PhoneImage\Mi\hmnote4.jpg"
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\PackageLayout\Images\PhoneImage\Mi\hmnote3.jpg"			"Images\PhoneImage\Mi\hmnote3.jpg"
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\PackageLayout\Images\PhoneImage\Mi\hmnote.jpg"			"Images\PhoneImage\Mi\hmnote.jpg"
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\PackageLayout\Images\PhoneImage\Mi\hm3.jpg"			"Images\PhoneImage\Mi\hm3.jpg"
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\PackageLayout\Images\PhoneImage\Mi\4s.jpg"			"Images\PhoneImage\Mi\4s.jpg"
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\PackageLayout\Images\PhoneImage\Mi\4c.jpg"			"Images\PhoneImage\Mi\4c.jpg"
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\PackageLayout\Images\PhoneImage\Mi\4.jpg"			"Images\PhoneImage\Mi\4.jpg"
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\PackageLayout\Images\PhoneImage\Mi\3x.jpg"			"Images\PhoneImage\Mi\3x.jpg"
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\PackageLayout\Images\PhoneImage\Mi\3s.jpg"			"Images\PhoneImage\Mi\3s.jpg"
+"D:\Code\ElectricalParameters\ElectricalParameters\obj\x64\Debug\PackageLayout\Images\PhoneImage\Mi\2a.jpg"			"Images\PhoneImage\Mi\2a.jpg"

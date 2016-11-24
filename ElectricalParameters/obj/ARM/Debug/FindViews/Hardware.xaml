@@ -1,0 +1,154 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="ElectricalParameters.FindViews.Hardware"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ElectricalParameters.FindViews"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:ElectricalParameters.Models"
+                        
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="硬件名称:" FontSize="14"
+                           Grid.Row="0" Grid.Column="0"/>
+                <TextBlock x:ConnectionId='17' Name="HardwareNameTextBlock"
+                           FontSize="16"
+                           Grid.Row="0" Grid.Column="1"/>
+
+                <TextBlock Text="显卡芯片:" FontSize="16"
+                           Grid.Row="1" Grid.Column="0"/>
+                <TextBlock x:ConnectionId='18' Name="GraphicsChipTextBlock"
+                           FontSize="16"
+                           Grid.Row="1" Grid.Column="1"/>
+
+                <TextBlock Text="核心频率:" FontSize="16"
+                           Grid.Row="2" Grid.Column="0"/>
+                <TextBlock x:ConnectionId='19' Name="CoreFrequencyTextBlock"
+                           FontSize="16"
+                           Grid.Row="2" Grid.Column="1"/>
+
+                <TextBlock Text="显存频率:" FontSize="16"
+                           Grid.Row="3" Grid.Column="0"/>
+                <TextBlock x:ConnectionId='20' Name="MemoryFrequencyTextBlock"
+                           FontSize="16"
+                           Grid.Row="3" Grid.Column="1"/>
+
+                <TextBlock Text="显存类型:" FontSize="16"
+                           Grid.Row="4" Grid.Column="0"/>
+                <TextBlock x:ConnectionId='21' Name="VideoMemoryTypeTextBlock"
+                           FontSize="16"
+                           Grid.Row="4" Grid.Column="1"/>
+
+                <TextBlock Text="显存:" FontSize="16"
+                           Grid.Row="5" Grid.Column="0"/>
+                <TextBlock x:ConnectionId='22' Name="AvailableMemoryTextBlock"
+                           FontSize="16"
+                           Grid.Row="5" Grid.Column="1"/>
+
+                <TextBlock Text="分辨率:" FontSize="16"
+                           Grid.Row="6" Grid.Column="0"/>
+                <TextBlock x:ConnectionId='23' Name="ResTextBlock"
+                           FontSize="16"
+                           Grid.Row="6" Grid.Column="1"/>
+            </Grid>
+        </ScrollViewer>
+        <GridView x:ConnectionId='2' Name="HardwareGridView"  Grid.Row="1"
+                  IsItemClickEnabled="True"
+                                                         
+                  HorizontalAlignment="Stretch"
+                   VerticalAlignment="Stretch"
+                                                      >
+            <GridView.ItemTemplate>
+                <DataTemplate                               >
+                    <Grid x:ConnectionId='14'>
+                        <Image x:ConnectionId='15'                                 />
+                        <Border Background="#A5000000" Height="48" VerticalAlignment="Bottom">
+                            <TextBlock x:ConnectionId='16'                              
+                                       HorizontalAlignment="Center" 
+                                       Foreground="White"
+                                       FontSize="28"/>
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+        <SplitView x:ConnectionId='3' Name="HardwareSplitView" Grid.Row="1" 
+                   DisplayMode="Overlay">
+            <SplitView.Pane>
+                <Pivot>
+                    <PivotItem Header="显卡">
+                        <GridView>
+                            <Button x:ConnectionId='4' Name="ColorfulButton" Content="Colorful" 
+                                                                
+                                    Width="135" FontSize="12"/>
+                            <Button x:ConnectionId='5' Name="GALAXYTechnologyButton" Content="GALAXYTechnology" 
+                                                                        
+                                    Width="135" FontSize="12"/>
+                            <Button x:ConnectionId='6' Name="ZotacButton" Content="Zotac" 
+                                                             
+                                    Width="135" FontSize="12"/>
+                            <Button x:ConnectionId='7' Name="MSIButton" Content="MSI" 
+                                                           
+                                    Width="135" FontSize="12"/>
+                            <Button x:ConnectionId='8' Name="SapphiretechButton" Content="Sapphiretech" 
+                                                                    
+                                    Width="135" FontSize="12"/>
+                            <Button x:ConnectionId='9' Name="GIGABYTEButton" Content="GIGABYTE" 
+                                                                
+                                    Width="135" FontSize="12"/>
+                            <Button x:ConnectionId='10' Name="ASUSButton" Content="ASUS" 
+                                                            
+                                    Width="135" FontSize="12"/>
+                            <Button x:ConnectionId='11' Name="COLORFIREButton" Content="COLORFIRE" 
+                                                                 
+                                    Width="135" FontSize="12"/>
+                            <Button x:ConnectionId='12' Name="MaxsunButton" Content="Maxsun" 
+                                                              
+                                    Width="135" FontSize="12"/>
+                            <Button x:ConnectionId='13' Name="GainwardButton" Content="Gainward" 
+                                                                
+                                    Width="135" FontSize="12"/>
+                        </GridView>
+                    </PivotItem>
+                </Pivot>
+            </SplitView.Pane>
+        </SplitView>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar IsOpen="False"
+                    ClosedDisplayMode="Compact">
+            <AppBarButton x:ConnectionId='24' Name="FindHardwareListAppBarButton"
+                                                                    
+                          Label="列表"
+                          Icon="List"/>
+            <AppBarButton x:ConnectionId='25' Name="H0meAppBarButton"
+                          Label="主页"
+                          Icon="Home"
+                                                        />
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
+
+

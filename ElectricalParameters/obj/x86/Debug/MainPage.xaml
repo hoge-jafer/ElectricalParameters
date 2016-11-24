@@ -1,0 +1,148 @@
+﻿<Page
+    x:Class="ElectricalParameters.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ElectricalParameters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid x:ConnectionId='1' Name="MenuImageGrid"
+                  Grid.Row="0">
+            <Image Source="/Images/Picture/wallhaven-383716.jpg" 
+                   Stretch="UniformToFill"/>
+        </Grid>
+        <StackPanel x:ConnectionId='2' HorizontalAlignment="Center"  Name="MenuStackPane" 
+                    Grid.Row="1" Margin="0,2,0,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid  Grid.Row="0" Grid.Column="0" Margin="2,0,1,0">
+                    <Image  Source="/Images/IconsCategory/wallhaven-153050.jpg" 
+                         Stretch="Uniform"/>
+                        <Border Background="#66000000"/>
+                    <Button x:ConnectionId='11' Name="MenuFindPhoneButton" 
+                        Content="&#xE8EA;" 
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="60"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                                                         
+                    BorderBrush="Transparent"                   
+                    Background="Transparent"
+                    Foreground="White"/>
+                </Grid>
+
+                <Grid  Grid.Row="0" Grid.Column="1" Margin="1,0,2,0">
+                    <Image Source="/Images/IconsCategory/Tablet.jpg" 
+                       Stretch="Uniform"/>
+                    <Border Background="#66000000"/>
+                    <Button x:ConnectionId='10' Name="ComputerButton" 
+                        Content="&#xE8FC;" 
+                                                    
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="60"
+                           VerticalAlignment="Stretch"
+                        BorderBrush="Transparent" 
+                        Background="Transparent"
+                            HorizontalAlignment="Stretch"
+                        Foreground="White"/>
+                </Grid>
+
+                <Grid  Grid.Row="1" Grid.Column="0" Margin="2,2,1,0">
+                    <Image Source="/Images/IconsCategory/wallhaven-1944.jpg"
+                       Stretch="Uniform"/>
+                    <Border Background="#66000000"/>
+                    <Button x:ConnectionId='9' Name="HardwareButton" 
+                        Content="&#xE78A;" 
+                                                    
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="60"
+                            VerticalAlignment="Stretch"
+                    Background="Transparent"
+                    BorderBrush="Transparent"                  
+                            HorizontalAlignment="Stretch"
+                    Foreground="White" />
+                </Grid>
+                <Grid  Grid.Row="1" Grid.Column="1" Margin="1,2,2,0">
+                    <Image Source="/Images/IconsCategory/wallhaven-127760.jpg"
+                       Stretch="Uniform"/>
+                    <Border Background="#66000000"/>
+                    <Button x:ConnectionId='8' Name="DigitalAudioButton" 
+                    Content="&#xE722;" 
+                                                        
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="60" 
+                            VerticalAlignment="Stretch"
+                    BorderBrush="Transparent"
+                    Background="Transparent"
+                            HorizontalAlignment="Stretch"
+                    Foreground="White" />
+                </Grid>
+            </Grid>
+        </StackPanel>
+        <SplitView x:ConnectionId='3' Name="MenuSpliview"
+                   Grid.Row="2"
+                   DisplayMode="Overlay"                  
+                   OpenPaneLength="150"
+                   >
+            <SplitView.Pane>
+                <ListBox x:ConnectionId='4' Name="MenuListBox" 
+                         SelectionMode="Single"
+                         Background="#66000000"
+                                                                        >
+                    <ListBoxItem x:ConnectionId='5' Name="ScoreListBoxItem" Background="Transparent">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="&#xE170;"
+                                       FontFamily="Segoe MDL2 Assets"
+                                       FontSize="24"/>
+                            <TextBlock Text="五分好评"
+                                       FontFamily="等线"
+                                       FontSize="18"
+                                       Margin="10,2,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem x:ConnectionId='6' Name="AboutListBoxItem">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="&#xE730;"
+                                       FontFamily="Segoe MDL2 Assets"
+                                       FontSize="24"/>
+                            <TextBlock x:ConnectionId='7' Name="MenuAbout" 
+                                    Text="关于我们"                                  
+                                    FontFamily="等线"
+                                       FontSize="18"
+                                       Margin="10,2,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+                
+                
+            </SplitView.Pane>
+        </SplitView>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar IsOpen="False"
+                    ClosedDisplayMode="Compact">
+            <AppBarButton x:ConnectionId='12' Name="ListAppBarButton"
+                          Label="列表"
+                          Icon="List"
+                                                       />
+            <AppBarButton x:ConnectionId='13' Name="HotAppBarButton" 
+                          Label="夜晚"
+                          Icon="View"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
+

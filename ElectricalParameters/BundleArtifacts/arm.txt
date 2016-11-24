@@ -1,0 +1,3 @@
+MainPackage=D:\Code\ElectricalParameters\ElectricalParameters\bin\ARM\Debug\ElectricalParameters_1.0.0.0_ARM_Debug.appx
+SymbolPackage=D:\Code\ElectricalParameters\ElectricalParameters\AppPackages\ElectricalParameters_1.0.0.0_Debug_Test\ElectricalParameters_1.0.0.0_ARM_Debug.appxsym
+ResourcePack=D:\Code\ElectricalParameters\ElectricalParameters\bin\ARM\Debug\ElectricalParameters_1.0.0.0_language-mi-latn.appx

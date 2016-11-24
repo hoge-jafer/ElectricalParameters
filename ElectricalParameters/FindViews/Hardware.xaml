@@ -1,0 +1,153 @@
+﻿<Page
+    x:Class="ElectricalParameters.FindViews.Hardware"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ElectricalParameters.FindViews"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:ElectricalParameters.Models"
+    Loaded="Page_Loaded"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="硬件名称:" FontSize="14"
+                           Grid.Row="0" Grid.Column="0"/>
+                <TextBlock Name="HardwareNameTextBlock"
+                           FontSize="16"
+                           Grid.Row="0" Grid.Column="1"/>
+
+                <TextBlock Text="显卡芯片:" FontSize="16"
+                           Grid.Row="1" Grid.Column="0"/>
+                <TextBlock Name="GraphicsChipTextBlock"
+                           FontSize="16"
+                           Grid.Row="1" Grid.Column="1"/>
+
+                <TextBlock Text="核心频率:" FontSize="16"
+                           Grid.Row="2" Grid.Column="0"/>
+                <TextBlock Name="CoreFrequencyTextBlock"
+                           FontSize="16"
+                           Grid.Row="2" Grid.Column="1"/>
+
+                <TextBlock Text="显存频率:" FontSize="16"
+                           Grid.Row="3" Grid.Column="0"/>
+                <TextBlock Name="MemoryFrequencyTextBlock"
+                           FontSize="16"
+                           Grid.Row="3" Grid.Column="1"/>
+
+                <TextBlock Text="显存类型:" FontSize="16"
+                           Grid.Row="4" Grid.Column="0"/>
+                <TextBlock Name="VideoMemoryTypeTextBlock"
+                           FontSize="16"
+                           Grid.Row="4" Grid.Column="1"/>
+
+                <TextBlock Text="显存:" FontSize="16"
+                           Grid.Row="5" Grid.Column="0"/>
+                <TextBlock Name="AvailableMemoryTextBlock"
+                           FontSize="16"
+                           Grid.Row="5" Grid.Column="1"/>
+
+                <TextBlock Text="分辨率:" FontSize="16"
+                           Grid.Row="6" Grid.Column="0"/>
+                <TextBlock Name="ResTextBlock"
+                           FontSize="16"
+                           Grid.Row="6" Grid.Column="1"/>
+            </Grid>
+        </ScrollViewer>
+        <GridView Name="HardwareGridView"  Grid.Row="1"
+                  IsItemClickEnabled="True"
+                   ItemClick="HardwareGridView_ItemClick"
+                  HorizontalAlignment="Stretch"
+                   VerticalAlignment="Stretch"
+                  ItemsSource="{x:Bind FindHardwares}">
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="data:FindHardware">
+                    <Grid>
+                        <Image Source="{x:Bind HardwareImage}" />
+                        <Border Background="#A5000000" Height="48" VerticalAlignment="Bottom">
+                            <TextBlock Text="{x:Bind HardwareName}" 
+                                       HorizontalAlignment="Center" 
+                                       Foreground="White"
+                                       FontSize="28"/>
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+        <SplitView Name="HardwareSplitView" Grid.Row="1" 
+                   DisplayMode="Overlay">
+            <SplitView.Pane>
+                <Pivot>
+                    <PivotItem Header="显卡">
+                        <GridView>
+                            <Button Name="ColorfulButton" Content="Colorful" 
+                                    Click="ColorfulButton_Click"
+                                    Width="135" FontSize="12"/>
+                            <Button Name="GALAXYTechnologyButton" Content="GALAXYTechnology" 
+                                    Click="GALAXYTechnologyButton_Click"
+                                    Width="135" FontSize="12"/>
+                            <Button Name="ZotacButton" Content="Zotac" 
+                                    Click="ZotacButton_Click"
+                                    Width="135" FontSize="12"/>
+                            <Button Name="MSIButton" Content="MSI" 
+                                    Click="MSIButton_Click"
+                                    Width="135" FontSize="12"/>
+                            <Button Name="SapphiretechButton" Content="Sapphiretech" 
+                                    Click="SapphiretechButton_Click"
+                                    Width="135" FontSize="12"/>
+                            <Button Name="GIGABYTEButton" Content="GIGABYTE" 
+                                    Click="GIGABYTEButton_Click"
+                                    Width="135" FontSize="12"/>
+                            <Button Name="ASUSButton" Content="ASUS" 
+                                    Click="ASUSButton_Click"
+                                    Width="135" FontSize="12"/>
+                            <Button Name="COLORFIREButton" Content="COLORFIRE" 
+                                    Click="COLORFIREButton_Click"
+                                    Width="135" FontSize="12"/>
+                            <Button Name="MaxsunButton" Content="Maxsun" 
+                                    Click="MaxsunButton_Click"
+                                    Width="135" FontSize="12"/>
+                            <Button Name="GainwardButton" Content="Gainward" 
+                                    Click="GainwardButton_Click"
+                                    Width="135" FontSize="12"/>
+                        </GridView>
+                    </PivotItem>
+                </Pivot>
+            </SplitView.Pane>
+        </SplitView>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar IsOpen="False"
+                    ClosedDisplayMode="Compact">
+            <AppBarButton Name="FindHardwareListAppBarButton"
+                          Click="FindHardwareListAppBarButton_Click"
+                          Label="列表"
+                          Icon="List"/>
+            <AppBarButton Name="H0meAppBarButton"
+                          Label="主页"
+                          Icon="Home"
+                          Click="H0meAppBarButton_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
+

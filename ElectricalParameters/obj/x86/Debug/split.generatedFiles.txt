@@ -1,0 +1,4 @@
+obj\x86\Debug\split.pri
+obj\x86\Debug\split.map.txt
+obj\x86\Debug\split.language-mi-latn.pri
+obj\x86\Debug\split.language-mi-latn.map.txt

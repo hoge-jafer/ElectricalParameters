@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-A8CBJCP</Machine>
+    <WindowsUser>zhong</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>f9fd4cdb-5873-4712-9d32-fc5aa0dd9acf</PackageIdentityName>
+    <PackageIdentityPublisher>CN=zhong</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\Code\ElectricalParameters\ElectricalParameters\obj\x86\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Code\ElectricalParameters\ElectricalParameters\bin\x86\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\bin\x86\Debug\ElectricalParameters.exe">
+      <PackagePath>entrypoint\ElectricalParameters.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
+      <PackagePath>Microsoft.CSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.ComponentModel.DataAnnotations.dll">
+      <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Core.dll">
+      <PackagePath>System.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Net.dll">
+      <PackagePath>System.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Numerics.dll">
+      <PackagePath>System.Numerics.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Runtime.Serialization.dll">
+      <PackagePath>System.Runtime.Serialization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.ServiceModel.Web.dll">
+      <PackagePath>System.ServiceModel.Web.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.ServiceModel.dll">
+      <PackagePath>System.ServiceModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Windows.dll">
+      <PackagePath>System.Windows.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Xml.Linq.dll">
+      <PackagePath>System.Xml.Linq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Xml.Serialization.dll">
+      <PackagePath>System.Xml.Serialization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Xml.dll">
+      <PackagePath>System.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.dll">
+      <PackagePath>System.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.VisualBasic\10.0.0\lib\netcore50\Microsoft.VisualBasic.dll">
+      <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
+      <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\runtime.any.System.Private.DataContractSerialization\4.1.0\lib\netcore50\System.Private.DataContractSerialization.dll">
+      <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.AppContext\4.0.0\lib\netcore50\System.AppContext.dll">
+      <PackagePath>System.AppContext.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Collections\4.0.10\lib\netcore50\System.Collections.dll">
+      <PackagePath>System.Collections.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Collections.Concurrent\4.0.10\lib\dotnet\System.Collections.Concurrent.dll">
+      <PackagePath>System.Collections.Concurrent.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Collections.Immutable\1.1.37\lib\dotnet\System.Collections.Immutable.dll">
+      <PackagePath>System.Collections.Immutable.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Collections.NonGeneric\4.0.0\lib\dotnet\System.Collections.NonGeneric.dll">
+      <PackagePath>System.Collections.NonGeneric.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Collections.Specialized\4.0.0\lib\dotnet\System.Collections.Specialized.dll">
+      <PackagePath>System.Collections.Specialized.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.ComponentModel\4.0.0\lib\netcore50\System.ComponentModel.dll">
+      <PackagePath>System.ComponentModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.ComponentModel.Annotations\4.0.10\lib\dotnet\System.ComponentModel.Annotations.dll">
+      <PackagePath>System.ComponentModel.Annotations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.ComponentModel.EventBasedAsync\4.0.10\lib\dotnet\System.ComponentModel.EventBasedAsync.dll">
+      <PackagePath>System.ComponentModel.EventBasedAsync.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Data.Common\4.0.0\lib\dotnet\System.Data.Common.dll">
+      <PackagePath>System.Data.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Diagnostics.Contracts\4.0.0\lib\netcore50\System.Diagnostics.Contracts.dll">
+      <PackagePath>System.Diagnostics.Contracts.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Diagnostics.Debug\4.0.10\lib\netcore50\System.Diagnostics.Debug.dll">
+      <PackagePath>System.Diagnostics.Debug.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Diagnostics.StackTrace\4.0.0\lib\netcore50\System.Diagnostics.StackTrace.dll">
+      <PackagePath>System.Diagnostics.StackTrace.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Diagnostics.Tools\4.0.0\lib\netcore50\System.Diagnostics.Tools.dll">
+      <PackagePath>System.Diagnostics.Tools.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Diagnostics.Tracing\4.0.20\lib\netcore50\System.Diagnostics.Tracing.dll">
+      <PackagePath>System.Diagnostics.Tracing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Dynamic.Runtime\4.0.10\lib\netcore50\System.Dynamic.Runtime.dll">
+      <PackagePath>System.Dynamic.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Globalization\4.0.10\lib\netcore50\System.Globalization.dll">
+      <PackagePath>System.Globalization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Globalization.Calendars\4.0.0\lib\netcore50\System.Globalization.Calendars.dll">
+      <PackagePath>System.Globalization.Calendars.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Globalization.Extensions\4.0.0\lib\dotnet\System.Globalization.Extensions.dll">
+      <PackagePath>System.Globalization.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.IO\4.0.10\lib\netcore50\System.IO.dll">
+      <PackagePath>System.IO.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.IO.Compression\4.0.0\lib\netcore50\System.IO.Compression.dll">
+      <PackagePath>System.IO.Compression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.IO.Compression.clrcompression-x86\4.0.0\runtimes\win10-x86\native\ClrCompression.dll">
+      <PackagePath>ClrCompression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.IO.Compression.ZipFile\4.0.0\lib\dotnet\System.IO.Compression.ZipFile.dll">
+      <PackagePath>System.IO.Compression.ZipFile.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.IO.FileSystem\4.0.0\lib\netcore50\System.IO.FileSystem.dll">
+      <PackagePath>System.IO.FileSystem.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.IO.FileSystem.Primitives\4.0.0\lib\dotnet\System.IO.FileSystem.Primitives.dll">
+      <PackagePath>System.IO.FileSystem.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.IO.IsolatedStorage\4.0.0\lib\netcore50\System.IO.IsolatedStorage.dll">
+      <PackagePath>System.IO.IsolatedStorage.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.IO.UnmanagedMemoryStream\4.0.0\lib\dotnet\System.IO.UnmanagedMemoryStream.dll">
+      <PackagePath>System.IO.UnmanagedMemoryStream.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Linq\4.0.0\lib\netcore50\System.Linq.dll">
+      <PackagePath>System.Linq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Linq.Expressions\4.0.10\lib\netcore50\System.Linq.Expressions.dll">
+      <PackagePath>System.Linq.Expressions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Linq.Parallel\4.0.0\lib\netcore50\System.Linq.Parallel.dll">
+      <PackagePath>System.Linq.Parallel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Linq.Queryable\4.0.0\lib\netcore50\System.Linq.Queryable.dll">
+      <PackagePath>System.Linq.Queryable.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Net.Http\4.0.0\lib\netcore50\System.Net.Http.dll">
+      <PackagePath>System.Net.Http.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Net.Http.Rtc\4.0.0\lib\netcore50\System.Net.Http.Rtc.dll">
+      <PackagePath>System.Net.Http.Rtc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Net.NetworkInformation\4.0.0\lib\netcore50\System.Net.NetworkInformation.dll">
+      <PackagePath>System.Net.NetworkInformation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Net.Primitives\4.0.10\lib\netcore50\System.Net.Primitives.dll">
+      <PackagePath>System.Net.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Net.Requests\4.0.10\lib\dotnet\System.Net.Requests.dll">
+      <PackagePath>System.Net.Requests.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Net.Sockets\4.0.0\lib\netcore50\System.Net.Sockets.dll">
+      <PackagePath>System.Net.Sockets.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Net.WebHeaderCollection\4.0.0\lib\dotnet\System.Net.WebHeaderCollection.dll">
+      <PackagePath>System.Net.WebHeaderCollection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Numerics.Vectors\4.1.0\lib\dotnet\System.Numerics.Vectors.dll">
+      <PackagePath>System.Numerics.Vectors.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Numerics.Vectors.WindowsRuntime\4.0.0\lib\dotnet\System.Numerics.Vectors.WindowsRuntime.dll">
+      <PackagePath>System.Numerics.Vectors.WindowsRuntime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.ObjectModel\4.0.10\lib\dotnet\System.ObjectModel.dll">
+      <PackagePath>System.ObjectModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Private.Networking\4.0.0\lib\netcore50\System.Private.Networking.dll">
+      <PackagePath>System.Private.Networking.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Private.ServiceModel\4.0.0\lib\netcore50\System.Private.ServiceModel.dll">
+      <PackagePath>System.Private.ServiceModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Private.Uri\4.0.0\lib\netcore50\System.Private.Uri.dll">
+      <PackagePath>System.Private.Uri.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Reflection\4.0.10\lib\netcore50\System.Reflection.dll">
+      <PackagePath>System.Reflection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Reflection.Context\4.0.0\lib\netcore50\System.Reflection.Context.dll">
+      <PackagePath>System.Reflection.Context.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Reflection.DispatchProxy\4.0.0\lib\netcore50\System.Reflection.DispatchProxy.dll">
+      <PackagePath>System.Reflection.DispatchProxy.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Reflection.Emit\4.0.0\lib\netcore50\System.Reflection.Emit.dll">
+      <PackagePath>System.Reflection.Emit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Reflection.Emit.ILGeneration\4.0.0\lib\netcore50\System.Reflection.Emit.ILGeneration.dll">
+      <PackagePath>System.Reflection.Emit.ILGeneration.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Reflection.Emit.Lightweight\4.0.0\lib\netcore50\System.Reflection.Emit.Lightweight.dll">
+      <PackagePath>System.Reflection.Emit.Lightweight.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Reflection.Extensions\4.0.0\lib\netcore50\System.Reflection.Extensions.dll">
+      <PackagePath>System.Reflection.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Reflection.Metadata\1.0.22\lib\dotnet\System.Reflection.Metadata.dll">
+      <PackagePath>System.Reflection.Metadata.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Reflection.Primitives\4.0.0\lib\netcore50\System.Reflection.Primitives.dll">
+      <PackagePath>System.Reflection.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Reflection.TypeExtensions\4.0.0\lib\netcore50\System.Reflection.TypeExtensions.dll">
+      <PackagePath>System.Reflection.TypeExtensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Resources.ResourceManager\4.0.0\lib\netcore50\System.Resources.ResourceManager.dll">
+      <PackagePath>System.Resources.ResourceManager.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Runtime\4.0.20\lib\netcore50\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Runtime.Extensions\4.0.10\lib\netcore50\System.Runtime.Extensions.dll">
+      <PackagePath>System.Runtime.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Runtime.Handles\4.0.0\lib\netcore50\System.Runtime.Handles.dll">
+      <PackagePath>System.Runtime.Handles.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Runtime.InteropServices\4.0.20\lib\netcore50\System.Runtime.InteropServices.dll">
+      <PackagePath>System.Runtime.InteropServices.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Runtime.InteropServices.WindowsRuntime\4.0.0\lib\netcore50\System.Runtime.InteropServices.WindowsRuntime.dll">
+      <PackagePath>System.Runtime.InteropServices.WindowsRuntime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Runtime.Numerics\4.0.0\lib\netcore50\System.Runtime.Numerics.dll">
+      <PackagePath>System.Runtime.Numerics.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Runtime.Serialization.Json\4.0.1\lib\netcore50\System.Runtime.Serialization.Json.dll">
+      <PackagePath>System.Runtime.Serialization.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Runtime.Serialization.Primitives\4.1.0\lib\netcore50\System.Runtime.Serialization.Primitives.dll">
+      <PackagePath>System.Runtime.Serialization.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Runtime.Serialization.Xml\4.1.0\lib\netcore50\System.Runtime.Serialization.Xml.dll">
+      <PackagePath>System.Runtime.Serialization.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Runtime.WindowsRuntime\4.0.10\lib\netcore50\System.Runtime.WindowsRuntime.dll">
+      <PackagePath>System.Runtime.WindowsRuntime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Runtime.WindowsRuntime.UI.Xaml\4.0.0\lib\netcore50\System.Runtime.WindowsRuntime.UI.Xaml.dll">
+      <PackagePath>System.Runtime.WindowsRuntime.UI.Xaml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Security.Claims\4.0.0\lib\dotnet\System.Security.Claims.dll">
+      <PackagePath>System.Security.Claims.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Security.Principal\4.0.0\lib\netcore50\System.Security.Principal.dll">
+      <PackagePath>System.Security.Principal.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.ServiceModel.Duplex\4.0.0\lib\netcore50\System.ServiceModel.Duplex.dll">
+      <PackagePath>System.ServiceModel.Duplex.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.ServiceModel.Http\4.0.10\lib\netcore50\System.ServiceModel.Http.dll">
+      <PackagePath>System.ServiceModel.Http.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.ServiceModel.NetTcp\4.0.0\lib\netcore50\System.ServiceModel.NetTcp.dll">
+      <PackagePath>System.ServiceModel.NetTcp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.ServiceModel.Primitives\4.0.0\lib\netcore50\System.ServiceModel.Primitives.dll">
+      <PackagePath>System.ServiceModel.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.ServiceModel.Security\4.0.0\lib\netcore50\System.ServiceModel.Security.dll">
+      <PackagePath>System.ServiceModel.Security.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Text.Encoding\4.0.10\lib\netcore50\System.Text.Encoding.dll">
+      <PackagePath>System.Text.Encoding.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Text.Encoding.CodePages\4.0.0\lib\dotnet\System.Text.Encoding.CodePages.dll">
+      <PackagePath>System.Text.Encoding.CodePages.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Text.Encoding.Extensions\4.0.10\lib\netcore50\System.Text.Encoding.Extensions.dll">
+      <PackagePath>System.Text.Encoding.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Text.RegularExpressions\4.0.10\lib\dotnet\System.Text.RegularExpressions.dll">
+      <PackagePath>System.Text.RegularExpressions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Threading\4.0.10\lib\netcore50\System.Threading.dll">
+      <PackagePath>System.Threading.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Threading.Overlapped\4.0.0\lib\netcore50\System.Threading.Overlapped.dll">
+      <PackagePath>System.Threading.Overlapped.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Threading.Tasks\4.0.10\lib\netcore50\System.Threading.Tasks.dll">
+      <PackagePath>System.Threading.Tasks.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Threading.Tasks.Dataflow\4.5.25\lib\dotnet\System.Threading.Tasks.Dataflow.dll">
+      <PackagePath>System.Threading.Tasks.Dataflow.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Threading.Tasks.Parallel\4.0.0\lib\netcore50\System.Threading.Tasks.Parallel.dll">
+      <PackagePath>System.Threading.Tasks.Parallel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Threading.Timer\4.0.0\lib\netcore50\System.Threading.Timer.dll">
+      <PackagePath>System.Threading.Timer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Xml.ReaderWriter\4.0.10\lib\dotnet\System.Xml.ReaderWriter.dll">
+      <PackagePath>System.Xml.ReaderWriter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Xml.XDocument\4.0.10\lib\dotnet\System.Xml.XDocument.dll">
+      <PackagePath>System.Xml.XDocument.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Xml.XmlDocument\4.0.0\lib\dotnet\System.Xml.XmlDocument.dll">
+      <PackagePath>System.Xml.XmlDocument.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\zhong\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
+      <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\ComputerImage\Microsoft\sb.jpg">
+      <PackagePath>Images\ComputerImage\Microsoft\sb.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\DigitalImage\Sony\epz.jpg">
+      <PackagePath>Images\DigitalImage\Sony\epz.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\HardwareImage\VideoCard\Asus\980.jpg">
+      <PackagePath>Images\HardwareImage\VideoCard\Asus\980.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\IconsCategory\Tablet.jpg">
+      <PackagePath>Images\IconsCategory\Tablet.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\IconsCategory\wallhaven-127760.jpg">
+      <PackagePath>Images\IconsCategory\wallhaven-127760.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\IconsCategory\wallhaven-153050.jpg">
+      <PackagePath>Images\IconsCategory\wallhaven-153050.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\IconsCategory\wallhaven-177880.jpg">
+      <PackagePath>Images\IconsCategory\wallhaven-177880.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\IconsCategory\wallhaven-1944.jpg">
+      <PackagePath>Images\IconsCategory\wallhaven-1944.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\IconsCategory\wallhaven-212760.jpg">
+      <PackagePath>Images\IconsCategory\wallhaven-212760.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\IconsCategory\wallhaven-271444.jpg">
+      <PackagePath>Images\IconsCategory\wallhaven-271444.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\IconsCategory\wallhaven-29863.jpg">
+      <PackagePath>Images\IconsCategory\wallhaven-29863.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\IconsCategory\wallhaven-383716.jpg">
+      <PackagePath>Images\IconsCategory\wallhaven-383716.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\IconsCategory\wallhaven-427363.jpg">
+      <PackagePath>Images\IconsCategory\wallhaven-427363.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\IconsCategory\wallhaven-427776.jpg">
+      <PackagePath>Images\IconsCategory\wallhaven-427776.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\IconsCategory\wallhaven-83980.jpg">
+      <PackagePath>Images\IconsCategory\wallhaven-83980.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\360\q5.jpg">
+      <PackagePath>Images\PhoneImage\360\q5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\BlackBerry\Leap.jpg">
+      <PackagePath>Images\PhoneImage\BlackBerry\Leap.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\BlackBerry\p9983.jpg">
+      <PackagePath>Images\PhoneImage\BlackBerry\p9983.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\BlackBerry\passport.jpg">
+      <PackagePath>Images\PhoneImage\BlackBerry\passport.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\BlackBerry\priv.jpg">
+      <PackagePath>Images\PhoneImage\BlackBerry\priv.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\BlackBerry\PSE.jpg">
+      <PackagePath>Images\PhoneImage\BlackBerry\PSE.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\BlackBerry\z3.jpg">
+      <PackagePath>Images\PhoneImage\BlackBerry\z3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Gionee\m6.jpg">
+      <PackagePath>Images\PhoneImage\Gionee\m6.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Honor\8.jpg">
+      <PackagePath>Images\PhoneImage\Honor\8.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\HTC\10.jpg">
+      <PackagePath>Images\PhoneImage\HTC\10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\HTC\m9.jpg">
+      <PackagePath>Images\PhoneImage\HTC\m9.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Huawei\g9.jpg">
+      <PackagePath>Images\PhoneImage\Huawei\g9.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Huawei\g9p.jpg">
+      <PackagePath>Images\PhoneImage\Huawei\g9p.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Huawei\mate8.jpg">
+      <PackagePath>Images\PhoneImage\Huawei\mate8.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Huawei\mates.jpg">
+      <PackagePath>Images\PhoneImage\Huawei\mates.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Huawei\mm5.jpg">
+      <PackagePath>Images\PhoneImage\Huawei\mm5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Huawei\p9.jpg">
+      <PackagePath>Images\PhoneImage\Huawei\p9.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Huawei\p9p.jpg">
+      <PackagePath>Images\PhoneImage\Huawei\p9p.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\IPhone\I5.jpg">
+      <PackagePath>Images\PhoneImage\IPhone\I5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\IPhone\I5S.jpg">
+      <PackagePath>Images\PhoneImage\IPhone\I5S.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\IPhone\I5SE.jpg">
+      <PackagePath>Images\PhoneImage\IPhone\I5SE.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\IPhone\I6.jpg">
+      <PackagePath>Images\PhoneImage\IPhone\I6.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\IPhone\I6P.jpg">
+      <PackagePath>Images\PhoneImage\IPhone\I6P.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\IPhone\I6s.jpg">
+      <PackagePath>Images\PhoneImage\IPhone\I6s.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\IPhone\I6sP.jpg">
+      <PackagePath>Images\PhoneImage\IPhone\I6sP.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Lenovo\z2pro.jpg">
+      <PackagePath>Images\PhoneImage\Lenovo\z2pro.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Letv\1s.jpg">
+      <PackagePath>Images\PhoneImage\Letv\1s.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Letv\2.jpg">
+      <PackagePath>Images\PhoneImage\Letv\2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Letv\2pro.jpg">
+      <PackagePath>Images\PhoneImage\Letv\2pro.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Letv\max2.jpg">
+      <PackagePath>Images\PhoneImage\Letv\max2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\LG\g5.jpg">
+      <PackagePath>Images\PhoneImage\LG\g5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\LG\g5se.jpg">
+      <PackagePath>Images\PhoneImage\LG\g5se.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\LG\nexus5.jpg">
+      <PackagePath>Images\PhoneImage\LG\nexus5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\MeiZu\mx4pro.jpg">
+      <PackagePath>Images\PhoneImage\MeiZu\mx4pro.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\MeiZu\mx6.jpg">
+      <PackagePath>Images\PhoneImage\MeiZu\mx6.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\MeiZu\pro6.jpg">
+      <PackagePath>Images\PhoneImage\MeiZu\pro6.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Microsoft\640.jpg">
+      <PackagePath>Images\PhoneImage\Microsoft\640.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Microsoft\640xl.jpg">
+      <PackagePath>Images\PhoneImage\Microsoft\640xl.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Microsoft\650.jpg">
+      <PackagePath>Images\PhoneImage\Microsoft\650.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Microsoft\950.jpg">
+      <PackagePath>Images\PhoneImage\Microsoft\950.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Microsoft\950xl.jpg">
+      <PackagePath>Images\PhoneImage\Microsoft\950xl.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Mi\2a.jpg">
+      <PackagePath>Images\PhoneImage\Mi\2a.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Mi\3s.jpg">
+      <PackagePath>Images\PhoneImage\Mi\3s.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Mi\3x.jpg">
+      <PackagePath>Images\PhoneImage\Mi\3x.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Mi\4.jpg">
+      <PackagePath>Images\PhoneImage\Mi\4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Mi\4c.jpg">
+      <PackagePath>Images\PhoneImage\Mi\4c.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Mi\4s.jpg">
+      <PackagePath>Images\PhoneImage\Mi\4s.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Mi\hm3.jpg">
+      <PackagePath>Images\PhoneImage\Mi\hm3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Mi\hmnote.jpg">
+      <PackagePath>Images\PhoneImage\Mi\hmnote.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Mi\hmnote3.jpg">
+      <PackagePath>Images\PhoneImage\Mi\hmnote3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Mi\hmnote4.jpg">
+      <PackagePath>Images\PhoneImage\Mi\hmnote4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Mi\hmpro.jpg">
+      <PackagePath>Images\PhoneImage\Mi\hmpro.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Mi\m5.jpg">
+      <PackagePath>Images\PhoneImage\Mi\m5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Mi\max.jpg">
+      <PackagePath>Images\PhoneImage\Mi\max.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Mi\note.jpg">
+      <PackagePath>Images\PhoneImage\Mi\note.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Motorola\g.jpg">
+      <PackagePath>Images\PhoneImage\Motorola\g.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Motorola\nexus6.jpg">
+      <PackagePath>Images\PhoneImage\Motorola\nexus6.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Motorola\x.jpg">
+      <PackagePath>Images\PhoneImage\Motorola\x.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Motorola\xpro.jpg">
+      <PackagePath>Images\PhoneImage\Motorola\xpro.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Motorola\xstyle.jpg">
+      <PackagePath>Images\PhoneImage\Motorola\xstyle.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Motorola\x极.jpg">
+      <PackagePath>Images\PhoneImage\Motorola\x极.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Motorola\z.jpg">
+      <PackagePath>Images\PhoneImage\Motorola\z.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Motorola\zf.jpg">
+      <PackagePath>Images\PhoneImage\Motorola\zf.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Nokia\1320.jpg">
+      <PackagePath>Images\PhoneImage\Nokia\1320.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Nokia\1520.jpg">
+      <PackagePath>Images\PhoneImage\Nokia\1520.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Nokia\730.jpg">
+      <PackagePath>Images\PhoneImage\Nokia\730.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Nokia\830.jpg">
+      <PackagePath>Images\PhoneImage\Nokia\830.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Nokia\920.jpg">
+      <PackagePath>Images\PhoneImage\Nokia\920.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Nokia\925.jpg">
+      <PackagePath>Images\PhoneImage\Nokia\925.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Nokia\929.jpg">
+      <PackagePath>Images\PhoneImage\Nokia\929.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Nokia\930.jpg">
+      <PackagePath>Images\PhoneImage\Nokia\930.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Nubia\z11.jpg">
+      <PackagePath>Images\PhoneImage\Nubia\z11.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Nubia\z9.jpg">
+      <PackagePath>Images\PhoneImage\Nubia\z9.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\OnePlus\3.jpg">
+      <PackagePath>Images\PhoneImage\OnePlus\3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\OnePlus\o1.jpg">
+      <PackagePath>Images\PhoneImage\OnePlus\o1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\OnePlus\op2.jpg">
+      <PackagePath>Images\PhoneImage\OnePlus\op2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\OnePlus\x.jpg">
+      <PackagePath>Images\PhoneImage\OnePlus\x.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Oppo\r9.jpg">
+      <PackagePath>Images\PhoneImage\Oppo\r9.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Samsung\A9.jpg">
+      <PackagePath>Images\PhoneImage\Samsung\A9.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Samsung\C5.jpg">
+      <PackagePath>Images\PhoneImage\Samsung\C5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Samsung\C7.jpg">
+      <PackagePath>Images\PhoneImage\Samsung\C7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Samsung\J3Pro.jpg">
+      <PackagePath>Images\PhoneImage\Samsung\J3Pro.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Samsung\N7.jpg">
+      <PackagePath>Images\PhoneImage\Samsung\N7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Samsung\S6.jpg">
+      <PackagePath>Images\PhoneImage\Samsung\S6.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Samsung\S6E.jpg">
+      <PackagePath>Images\PhoneImage\Samsung\S6E.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Samsung\S7.jpg">
+      <PackagePath>Images\PhoneImage\Samsung\S7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Samsung\S7e.jpg">
+      <PackagePath>Images\PhoneImage\Samsung\S7e.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Smartisan\jg.jpg">
+      <PackagePath>Images\PhoneImage\Smartisan\jg.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Smartisan\t1.jpg">
+      <PackagePath>Images\PhoneImage\Smartisan\t1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Smartisan\t2.jpg">
+      <PackagePath>Images\PhoneImage\Smartisan\t2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Sony\z5.jpg">
+      <PackagePath>Images\PhoneImage\Sony\z5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Sony\z5p.jpg">
+      <PackagePath>Images\PhoneImage\Sony\z5p.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\TCL\750.jpg">
+      <PackagePath>Images\PhoneImage\TCL\750.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Vivo\x6s.jpg">
+      <PackagePath>Images\PhoneImage\Vivo\x6s.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Vivo\x7.jpg">
+      <PackagePath>Images\PhoneImage\Vivo\x7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Vivo\x7p.jpg">
+      <PackagePath>Images\PhoneImage\Vivo\x7p.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\Vivo\xplay5.jpg">
+      <PackagePath>Images\PhoneImage\Vivo\xplay5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\ZTE\7.jpg">
+      <PackagePath>Images\PhoneImage\ZTE\7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\ZTE\axon mini.jpg">
+      <PackagePath>Images\PhoneImage\ZTE\axon mini.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\ZTE\axon.jpg">
+      <PackagePath>Images\PhoneImage\ZTE\axon.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\ZUK\z1.jpg">
+      <PackagePath>Images\PhoneImage\ZUK\z1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\ZUK\z2.jpg">
+      <PackagePath>Images\PhoneImage\ZUK\z2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\PhoneImage\ZUK\z2pro.jpg">
+      <PackagePath>Images\PhoneImage\ZUK\z2pro.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\Picture\wallhaven-343515.jpg">
+      <PackagePath>Images\Picture\wallhaven-343515.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\Picture\wallhaven-378511.jpg">
+      <PackagePath>Images\Picture\wallhaven-378511.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\Picture\wallhaven-383716.jpg">
+      <PackagePath>Images\Picture\wallhaven-383716.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\Picture\wallhaven-385454.jpg">
+      <PackagePath>Images\Picture\wallhaven-385454.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\Picture\wallhaven-413451.jpg">
+      <PackagePath>Images\Picture\wallhaven-413451.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Images\Picture\wallhaven-419771.jpg">
+      <PackagePath>Images\Picture\wallhaven-419771.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\bin\x86\Debug\ElectricalParameters.xr.xml">
+      <PackagePath>ElectricalParameters.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\ElectricalParameters\ElectricalParameters\bin\x86\Debug\Core\ElectricalParameters.exe">
+      <PackagePath>ElectricalParameters.exe</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="E:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\">
+      <Name>Microsoft.NET.CoreRuntime.1.0</Name>
+      <Version>1.0.23819.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23819.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>E:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\.\AppX\ARM\Microsoft.NET.CoreRuntime.1.0.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="E:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\">
+      <Name>Microsoft.NET.CoreRuntime.1.0</Name>
+      <Version>1.0.23819.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23819.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>E:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\.\AppX\x64\Microsoft.NET.CoreRuntime.1.0.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="E:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\">
+      <Name>Microsoft.NET.CoreRuntime.1.0</Name>
+      <Version>1.0.23819.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23819.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>E:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\.\AppX\x86\Microsoft.NET.CoreRuntime.1.0.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="E:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.24210.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.24210.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>E:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="E:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.24210.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.24210.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>E:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="E:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.24210.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.24210.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>E:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

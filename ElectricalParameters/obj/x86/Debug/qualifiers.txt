@@ -1,0 +1,4 @@
+AlternateForm=UNPLATED
+Language=MI
+Scale=200
+TargetSize=24

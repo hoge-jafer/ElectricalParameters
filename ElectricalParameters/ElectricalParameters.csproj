@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{95A9714B-D577-474A-8043-D2882290AB9D}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ElectricalParameters</RootNamespace>
+    <AssemblyName>ElectricalParameters</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>ElectricalParameters_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Find.xaml.cs">
+      <DependentUpon>Find.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FindViews\Computer.xaml.cs">
+      <DependentUpon>Computer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FindViews\Digital.xaml.cs">
+      <DependentUpon>Digital.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FindViews\Hardware.xaml.cs">
+      <DependentUpon>Hardware.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FindViews\Phone.xaml.cs">
+      <DependentUpon>Phone.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainViews\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FindComputer.cs" />
+    <Compile Include="Models\FindDigital.cs" />
+    <Compile Include="Models\FindHardware.cs" />
+    <Compile Include="Models\FindHardwareCPU.cs" />
+    <Compile Include="Models\FindPhone.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="ElectricalParameters_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\ComputerImage\Acer\ce4xDX6a5VBrM.jpg" />
+    <Content Include="Images\ComputerImage\Acer\ceduEb9EYKhc.jpg" />
+    <Content Include="Images\ComputerImage\Acer\ceImiuuMQW01A.jpg" />
+    <Content Include="Images\ComputerImage\Acer\cenkCaxgJuu2.jpg" />
+    <Content Include="Images\ComputerImage\Acer\ceVNJcKX8LxNA.jpg" />
+    <Content Include="Images\ComputerImage\Alienware\ce28Sf1Rsq0Ck.jpg" />
+    <Content Include="Images\ComputerImage\Alienware\ce8D9jKAyfsMo.jpg" />
+    <Content Include="Images\ComputerImage\Alienware\cekLOAFJ6AWYc.jpg" />
+    <Content Include="Images\ComputerImage\Alienware\ceLrMo2xhdZQY.jpg" />
+    <Content Include="Images\ComputerImage\Alienware\cePWUolmVmRzk.jpg" />
+    <Content Include="Images\ComputerImage\Apple\ce1aHYMUMHnuU.jpg" />
+    <Content Include="Images\ComputerImage\Apple\ce8ntYuXiceiw.jpg" />
+    <Content Include="Images\ComputerImage\Apple\cecsrhlQFAJYo.jpg" />
+    <Content Include="Images\ComputerImage\Apple\cecTYVBVea7uw.jpg" />
+    <Content Include="Images\ComputerImage\Apple\ceQJxmgmuAc.jpg" />
+    <Content Include="Images\ComputerImage\Apple\cerZ22faYdVUE.jpg" />
+    <Content Include="Images\ComputerImage\Asus\ce8NEaGcRf66k.jpg" />
+    <Content Include="Images\ComputerImage\Asus\cebF7NX2roHLI.jpg" />
+    <Content Include="Images\ComputerImage\Asus\ceOcFZZRLvOaE.jpg" />
+    <Content Include="Images\ComputerImage\Asus\ceOvPZnhXPOo.jpg" />
+    <Content Include="Images\ComputerImage\Asus\ceS82dO3vglKk.jpg" />
+    <Content Include="Images\ComputerImage\Cube\ceA56bscGRuk6.jpg" />
+    <Content Include="Images\ComputerImage\Cube\ceO8DHTg6lF3M.jpg" />
+    <Content Include="Images\ComputerImage\Dell\ce9nnMzCzhhWQ.jpg" />
+    <Content Include="Images\ComputerImage\Dell\ceEvPyl1uO5vo.jpg" />
+    <Content Include="Images\ComputerImage\Dell\ceFig3R3dsFng.jpg" />
+    <Content Include="Images\ComputerImage\Dell\cenWG2S98yRdw.jpg" />
+    <Content Include="Images\ComputerImage\Dell\cerW6TnxDfCmQ.jpg" />
+    <Content Include="Images\ComputerImage\Gigabyte\ceeHShl9F89Pg.jpg" />
+    <Content Include="Images\ComputerImage\Gigabyte\cem8B9AUjzeV2.jpg" />
+    <Content Include="Images\ComputerImage\Gigabyte\cenWiDgzo99s.jpg" />
+    <Content Include="Images\ComputerImage\Gigabyte\ceZatkgKKtF.jpg" />
+    <Content Include="Images\ComputerImage\Gigabyte\ceZp6f4EnaOdQ.jpg" />
+    <Content Include="Images\ComputerImage\Hasee\ceDu2Bsq1RGMY.jpg" />
+    <Content Include="Images\ComputerImage\Hasee\ceeeVYL14N8yg.jpg" />
+    <Content Include="Images\ComputerImage\Hasee\ceeoGHab7LE7A.jpg" />
+    <Content Include="Images\ComputerImage\Hasee\cejJ1eTntJRmU.jpg" />
+    <Content Include="Images\ComputerImage\Hasee\ceZeBAALNMz2.jpg" />
+    <Content Include="Images\ComputerImage\Hp\ce2zdhWnBD2g.jpg" />
+    <Content Include="Images\ComputerImage\Hp\ceadXvXO68reU.jpg" />
+    <Content Include="Images\ComputerImage\Hp\ceKoJ8t8Y8GQI.jpg" />
+    <Content Include="Images\ComputerImage\Hp\ceThwQ0AO0P56.jpg" />
+    <Content Include="Images\ComputerImage\Hp\ceUCpJcrPuGQk.jpg" />
+    <Content Include="Images\ComputerImage\Lenovo\ce5RluNKCHXLo.jpg" />
+    <Content Include="Images\ComputerImage\Lenovo\ceBFw59SgiO6A.jpg" />
+    <Content Include="Images\ComputerImage\Lenovo\cecEsH2GGSbMY.jpg" />
+    <Content Include="Images\ComputerImage\Lenovo\cefpmHKPmcyE.jpg" />
+    <Content Include="Images\ComputerImage\Lenovo\cehPowYlzWdlo.jpg" />
+    <Content Include="Images\ComputerImage\Lenovo\cejjmeFMPb2.jpg" />
+    <Content Include="Images\ComputerImage\Lenovo\ceMslCszJDL6.jpg" />
+    <Content Include="Images\ComputerImage\Lenovo\cenCq8kk2Ln6.jpg" />
+    <Content Include="Images\ComputerImage\Lenovo\ceOHTRyHn1P0Y.jpg" />
+    <Content Include="Images\ComputerImage\Lenovo\ceosgBMFqfDhI.jpg" />
+    <Content Include="Images\ComputerImage\Lenovo\ceOvjlaE5E50Y.jpg" />
+    <Content Include="Images\ComputerImage\Lenovo\cesV10lvFkzE.jpg" />
+    <Content Include="Images\ComputerImage\Lenovo\ceuRZCtmzjaLY.jpg" />
+    <Content Include="Images\ComputerImage\Machenike\ce4XvEO8T9Kd6.jpg" />
+    <Content Include="Images\ComputerImage\Machenike\ceFNf9gdGLKas.jpg" />
+    <Content Include="Images\ComputerImage\Machenike\ceIiA3JD1qMAA.jpg" />
+    <Content Include="Images\ComputerImage\Machenike\ceJpcBVScwSQU.jpg" />
+    <Content Include="Images\ComputerImage\Machenike\ceVXcYWo1i2s.jpg" />
+    <Content Include="Images\ComputerImage\Microsoft\ce7N9dHudIIrY.jpg" />
+    <Content Include="Images\ComputerImage\Microsoft\cecG9Nldy7FiM.jpg" />
+    <Content Include="Images\ComputerImage\Microsoft\cesGUtGWgwvY.jpg" />
+    <Content Include="Images\ComputerImage\Microsoft\cew6irpspY9Zk.jpg" />
+    <Content Include="Images\ComputerImage\Microsoft\sb.jpg" />
+    <Content Include="Images\ComputerImage\Mi\ce1ROpMYI6.jpg" />
+    <Content Include="Images\ComputerImage\Mi\ce6HhBA34tK6.jpg" />
+    <Content Include="Images\ComputerImage\Mi\ceAA4hqWVvq6.jpg" />
+    <Content Include="Images\ComputerImage\Mi\cePbkekq1OUuM.jpg" />
+    <Content Include="Images\ComputerImage\Nokia\cetI3sRf8ESwY.jpg" />
+    <Content Include="Images\ComputerImage\Ramos\ce4Ypz3F4I2hY.jpg" />
+    <Content Include="Images\ComputerImage\Ramos\ce7PInvQdWoRk.jpg" />
+    <Content Include="Images\ComputerImage\Ramos\cednH82G6ZF1k.jpg" />
+    <Content Include="Images\ComputerImage\Razer\ceaXWRGYR3u6.jpg" />
+    <Content Include="Images\ComputerImage\Razer\ceBJ80WM6lkYc.jpg" />
+    <Content Include="Images\ComputerImage\Razer\cegBNXoJi6jNU.jpg" />
+    <Content Include="Images\ComputerImage\Razer\ceiLZ977Kw3s.jpg" />
+    <Content Include="Images\ComputerImage\Razer\ceSfDmxJ8zaQ.jpg" />
+    <Content Include="Images\ComputerImage\Samsung\ce04u1ZsUaXk.jpg" />
+    <Content Include="Images\ComputerImage\Samsung\ce4R8WRMoAvg.jpg" />
+    <Content Include="Images\ComputerImage\Samsung\cehbyd1ysifPI.jpg" />
+    <Content Include="Images\ComputerImage\Samsung\ceMY6WQJMVqYw.jpg" />
+    <Content Include="Images\ComputerImage\Samsung\ceoyJp10sEuI.jpg" />
+    <Content Include="Images\ComputerImage\Samsung\cevKfJ5BBmr5A.jpg" />
+    <Content Include="Images\ComputerImage\Samsung\cevP0yp0Cink.jpg" />
+    <Content Include="Images\ComputerImage\Samsung\ceYcQHG4vhPA.jpg" />
+    <Content Include="Images\ComputerImage\Teclast\ceEx8iBwmLBQ.jpg" />
+    <Content Include="Images\ComputerImage\Teclast\cefQM2DtGcrec.jpg" />
+    <Content Include="Images\ComputerImage\Teclast\ceUXXaYYbJwE.jpg" />
+    <Content Include="Images\ComputerImage\Terransforce\cefI1hCERVE.jpg" />
+    <Content Include="Images\ComputerImage\Terransforce\cejEE0BOk1hc.jpg" />
+    <Content Include="Images\ComputerImage\Terransforce\ceJNTgl4ronmw.jpg" />
+    <Content Include="Images\ComputerImage\Terransforce\ceNixqfCdKGUg.jpg" />
+    <Content Include="Images\ComputerImage\Terransforce\cezrfqRvAoB7Y.jpg" />
+    <Content Include="Images\ComputerImage\Thunderobot\ce17M0gAZKkMM.jpg" />
+    <Content Include="Images\ComputerImage\Thunderobot\ce5Xlsl8Oab6.jpg" />
+    <Content Include="Images\ComputerImage\Thunderobot\ceiwEzHLPTB6.jpg" />
+    <Content Include="Images\ComputerImage\Thunderobot\ceOw8uR50inDU.jpg" />
+    <Content Include="Images\ComputerImage\Thunderobot\ceyZukkK9UB2.jpg" />
+    <Content Include="Images\ComputerImage\Toshiba\cebHh5b7ZvlP.jpg" />
+    <Content Include="Images\ComputerImage\Toshiba\ceF891YUe4q0g.jpg" />
+    <Content Include="Images\ComputerImage\Toshiba\ceF8cuNjgNmyQ.jpg" />
+    <Content Include="Images\ComputerImage\Toshiba\ceLOcH8tMiOeU.jpg" />
+    <Content Include="Images\ComputerImage\Toshiba\ceVfvUcskns82.jpg" />
+    <Content Include="Images\DigitalImage\Canon\ce6XhPtxnruxE.jpg" />
+    <Content Include="Images\DigitalImage\Canon\ceCwRka73nAr6.jpg" />
+    <Content Include="Images\DigitalImage\Canon\cedELhFWS42co.jpg" />
+    <Content Include="Images\DigitalImage\Canon\cemK7jVOrT3I6.jpg" />
+    <Content Include="Images\DigitalImage\Canon\ceMpEZL7rOO.jpg" />
+    <Content Include="Images\DigitalImage\Casio\ceCq2UoK4UH1s.jpg" />
+    <Content Include="Images\DigitalImage\Casio\cedcsy4dYMrk.jpg" />
+    <Content Include="Images\DigitalImage\Casio\cehnchNibeCM.jpg" />
+    <Content Include="Images\DigitalImage\Casio\cemEaHZzcYppA.jpg" />
+    <Content Include="Images\DigitalImage\Casio\cexhBWs1UmNw.jpg" />
+    <Content Include="Images\DigitalImage\Fujifilm\ce5ONW053Af7.jpg" />
+    <Content Include="Images\DigitalImage\Fujifilm\cea8ls6oFsGM.jpg" />
+    <Content Include="Images\DigitalImage\Fujifilm\ceASVzIHzBbQ.jpg" />
+    <Content Include="Images\DigitalImage\Fujifilm\celbLAkuL9Lbw.jpg" />
+    <Content Include="Images\DigitalImage\Fujifilm\cerMai9RpsMG6.jpg" />
+    <Content Include="Images\DigitalImage\Kodak\ceCYsrz7DATU.jpg" />
+    <Content Include="Images\DigitalImage\Kodak\ceGM16TPJ6xSI.jpg" />
+    <Content Include="Images\DigitalImage\Kodak\ceMSBw0TuPPFY.jpg" />
+    <Content Include="Images\DigitalImage\Kodak\ceO3eHbKjx8cQ.jpg" />
+    <Content Include="Images\DigitalImage\Kodak\cey4u1hE6lCK6.jpg" />
+    <Content Include="Images\DigitalImage\Leica\ce2GVv7ERSOSo.jpg" />
+    <Content Include="Images\DigitalImage\Leica\ceaa5fEamSZhc.jpg" />
+    <Content Include="Images\DigitalImage\Leica\ceeHQox3HIYs.jpg" />
+    <Content Include="Images\DigitalImage\Leica\cet5N3K7buGWI.jpg" />
+    <Content Include="Images\DigitalImage\Leica\ceuWh6NDOadsE.jpg" />
+    <Content Include="Images\DigitalImage\Nikon\ceaZIyEZWj9U.jpg" />
+    <Content Include="Images\DigitalImage\Nikon\cebIdU1F2lhyY.jpg" />
+    <Content Include="Images\DigitalImage\Nikon\cemxlILBdHjWw.jpg" />
+    <Content Include="Images\DigitalImage\Nikon\ceoHEaX66Hhw.jpg" />
+    <Content Include="Images\DigitalImage\Nikon\cexL4MJcRu5hs.jpg" />
+    <Content Include="Images\DigitalImage\Pentax\ce3uCydTR5tU.jpg" />
+    <Content Include="Images\DigitalImage\Pentax\ceE2yGlnDHq2.jpg" />
+    <Content Include="Images\DigitalImage\Pentax\ceE7RCn4Nbp1.jpg" />
+    <Content Include="Images\DigitalImage\Pentax\ceJtko7hbYe4s.jpg" />
+    <Content Include="Images\DigitalImage\Pentax\cep723RNnUXw.jpg" />
+    <Content Include="Images\DigitalImage\Samsung\cea6RywLyInCY.jpg" />
+    <Content Include="Images\DigitalImage\Samsung\cenrZHQHR10T2.jpg" />
+    <Content Include="Images\DigitalImage\Samsung\cewFvB1mZszY.jpg" />
+    <Content Include="Images\DigitalImage\Samsung\ceY68vHKbq4M.jpg" />
+    <Content Include="Images\DigitalImage\Samsung\cez4F9Mdg2wI.jpg" />
+    <Content Include="Images\DigitalImage\Sony\ceEOEGzEXPKck.jpg" />
+    <Content Include="Images\DigitalImage\Sony\cegLgAe2LV1Fo.jpg" />
+    <Content Include="Images\DigitalImage\Sony\ceM2bLfTS9o9M.jpg" />
+    <Content Include="Images\DigitalImage\Sony\cesFMrqodshc.jpg" />
+    <Content Include="Images\DigitalImage\Sony\epz.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Asus\980.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Asus\ce9tKVpKYKGQ.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Asus\ceCWG01rZnAX2.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Asus\cepZVRJ01FqHA.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Asus\cerJ4CE0DEkPg.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Asus\cevW1z1uGTV4A.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Colorfire\ceanHclkmhTqE.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Colorfire\ceHcftozIXSHA.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Colorfire\cepIz9lYRJuWo.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Colorfire\ceQA4NxNWOsk.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Colorfire\ceV4UOiqxkY.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Colorful\ce4vJJThmAzw.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Colorful\ce9l5lmzqJoc.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Colorful\ced8IWIBESvc.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Colorful\cedTvYPE6uyZM.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Colorful\cep9gSM4jFR82.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Colorful\ceZ0ePVvQqe6.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Gainward\ce1488gANDnfQ.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Gainward\ceDThsualrOFs.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Gainward\ceFAcMu7PhZQ.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Gainward\ceNXLAO0w59oY.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Gainward\cet5mMITs1zO6.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Galaytechnology\cebZGa7LM44uI.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Galaytechnology\ceEHVbReuKwT2.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Galaytechnology\cefiRsYywz0Pg.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Galaytechnology\ceG7901kqUux6.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Galaytechnology\ceL0Q676QKWs.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Gigabyte\ce0xzBlYqZBcI.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Gigabyte\ce3avZzfjleuY.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Gigabyte\ce9ity940Hy6.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Gigabyte\ceAeI23qi9Mps.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Gigabyte\ceJzF5oAgacwQ.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Gigabyte\ceqf0tbZz0Aik.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Gigabyte\ceTy8SN504PFs.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Gigabyte\ceuk3108QALtc.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Maxsun\ce4JnZRlIOtxg.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Maxsun\ceeTRYndaAZw.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Maxsun\ceHCf43nVLISA.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Maxsun\cePmKYZudpxm6.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Maxsun\ceUw1SlS0HHJY.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\MSI\ce094lct4jU2.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\MSI\ce1TZ2DVb4AY.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\MSI\ceHRA7TfUfd6.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\MSI\celkWRFkP9Ss.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\MSI\ceMESi9SQcHQ.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\MSI\ceTl3QZiiYPJo.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Sapphiretech\ce6HZBkWrswpc.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Sapphiretech\cebuLcdtxidM6.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Sapphiretech\ceCjyoc4kU4nY.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Sapphiretech\ceCmEPSzJ6vA.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Sapphiretech\ceEYyp7qTtcyY.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Sapphiretech\ceWqObHCV4a7.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Zotac\ceaOclb8bIS4c.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Zotac\ceegntFFkymU.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Zotac\cem6nTr9gUdBU.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Zotac\ceUaoZQxSrvIE.jpg" />
+    <Content Include="Images\HardwareImage\VideoCard\Zotac\cewRG76O91ooQ.jpg" />
+    <Content Include="Images\IconsCategory\Tablet.jpg" />
+    <Content Include="Images\IconsCategory\wallhaven-127760.jpg" />
+    <Content Include="Images\IconsCategory\wallhaven-153050.jpg" />
+    <Content Include="Images\IconsCategory\wallhaven-177880.jpg" />
+    <Content Include="Images\IconsCategory\wallhaven-1944.jpg" />
+    <Content Include="Images\IconsCategory\wallhaven-212760.jpg" />
+    <Content Include="Images\IconsCategory\wallhaven-271444.jpg" />
+    <Content Include="Images\IconsCategory\wallhaven-29863.jpg" />
+    <Content Include="Images\IconsCategory\wallhaven-383716.jpg" />
+    <Content Include="Images\IconsCategory\wallhaven-427363.jpg" />
+    <Content Include="Images\IconsCategory\wallhaven-427776.jpg" />
+    <Content Include="Images\IconsCategory\wallhaven-83980.jpg" />
+    <Content Include="Images\PhoneImage\360\q5.jpg" />
+    <Content Include="Images\PhoneImage\BlackBerry\Leap.jpg" />
+    <Content Include="Images\PhoneImage\BlackBerry\p9983.jpg" />
+    <Content Include="Images\PhoneImage\BlackBerry\passport.jpg" />
+    <Content Include="Images\PhoneImage\BlackBerry\priv.jpg" />
+    <Content Include="Images\PhoneImage\BlackBerry\PSE.jpg" />
+    <Content Include="Images\PhoneImage\BlackBerry\z3.jpg" />
+    <Content Include="Images\PhoneImage\Gionee\m6.jpg" />
+    <Content Include="Images\PhoneImage\Honor\8.jpg" />
+    <Content Include="Images\PhoneImage\HTC\10.jpg" />
+    <Content Include="Images\PhoneImage\HTC\m9.jpg" />
+    <Content Include="Images\PhoneImage\Huawei\g9.jpg" />
+    <Content Include="Images\PhoneImage\Huawei\g9p.jpg" />
+    <Content Include="Images\PhoneImage\Huawei\mate8.jpg" />
+    <Content Include="Images\PhoneImage\Huawei\mates.jpg" />
+    <Content Include="Images\PhoneImage\Huawei\mm5.jpg" />
+    <Content Include="Images\PhoneImage\Huawei\p9.jpg" />
+    <Content Include="Images\PhoneImage\Huawei\p9p.jpg" />
+    <Content Include="Images\PhoneImage\IPhone\I5.jpg" />
+    <Content Include="Images\PhoneImage\IPhone\I5S.jpg" />
+    <Content Include="Images\PhoneImage\IPhone\I5SE.jpg" />
+    <Content Include="Images\PhoneImage\IPhone\I6.jpg" />
+    <Content Include="Images\PhoneImage\IPhone\I6P.jpg" />
+    <Content Include="Images\PhoneImage\IPhone\I6s.jpg" />
+    <Content Include="Images\PhoneImage\IPhone\I6sP.jpg" />
+    <Content Include="Images\PhoneImage\Lenovo\z2pro.jpg" />
+    <Content Include="Images\PhoneImage\Letv\1s.jpg" />
+    <Content Include="Images\PhoneImage\Letv\2.jpg" />
+    <Content Include="Images\PhoneImage\Letv\2pro.jpg" />
+    <Content Include="Images\PhoneImage\Letv\max2.jpg" />
+    <Content Include="Images\PhoneImage\LG\g5.jpg" />
+    <Content Include="Images\PhoneImage\LG\g5se.jpg" />
+    <Content Include="Images\PhoneImage\LG\nexus5.jpg" />
+    <Content Include="Images\PhoneImage\MeiZu\mx4pro.jpg" />
+    <Content Include="Images\PhoneImage\MeiZu\mx6.jpg" />
+    <Content Include="Images\PhoneImage\MeiZu\pro6.jpg" />
+    <Content Include="Images\PhoneImage\Microsoft\640.jpg" />
+    <Content Include="Images\PhoneImage\Microsoft\640xl.jpg" />
+    <Content Include="Images\PhoneImage\Microsoft\650.jpg" />
+    <Content Include="Images\PhoneImage\Microsoft\950.jpg" />
+    <Content Include="Images\PhoneImage\Microsoft\950xl.jpg" />
+    <Content Include="Images\PhoneImage\Mi\2a.jpg" />
+    <Content Include="Images\PhoneImage\Mi\3s.jpg" />
+    <Content Include="Images\PhoneImage\Mi\3x.jpg" />
+    <Content Include="Images\PhoneImage\Mi\4.jpg" />
+    <Content Include="Images\PhoneImage\Mi\4c.jpg" />
+    <Content Include="Images\PhoneImage\Mi\4s.jpg" />
+    <Content Include="Images\PhoneImage\Mi\hm3.jpg" />
+    <Content Include="Images\PhoneImage\Mi\hmnote.jpg" />
+    <Content Include="Images\PhoneImage\Mi\hmnote3.jpg" />
+    <Content Include="Images\PhoneImage\Mi\hmnote4.jpg" />
+    <Content Include="Images\PhoneImage\Mi\hmpro.jpg" />
+    <Content Include="Images\PhoneImage\Mi\m5.jpg" />
+    <Content Include="Images\PhoneImage\Mi\max.jpg" />
+    <Content Include="Images\PhoneImage\Mi\note.jpg" />
+    <Content Include="Images\PhoneImage\Motorola\g.jpg" />
+    <Content Include="Images\PhoneImage\Motorola\nexus6.jpg" />
+    <Content Include="Images\PhoneImage\Motorola\x.jpg" />
+    <Content Include="Images\PhoneImage\Motorola\xpro.jpg" />
+    <Content Include="Images\PhoneImage\Motorola\xstyle.jpg" />
+    <Content Include="Images\PhoneImage\Motorola\x极.jpg" />
+    <Content Include="Images\PhoneImage\Motorola\z.jpg" />
+    <Content Include="Images\PhoneImage\Motorola\zf.jpg" />
+    <Content Include="Images\PhoneImage\Nokia\1320.jpg" />
+    <Content Include="Images\PhoneImage\Nokia\1520.jpg" />
+    <Content Include="Images\PhoneImage\Nokia\730.jpg" />
+    <Content Include="Images\PhoneImage\Nokia\830.jpg" />
+    <Content Include="Images\PhoneImage\Nokia\920.jpg" />
+    <Content Include="Images\PhoneImage\Nokia\925.jpg" />
+    <Content Include="Images\PhoneImage\Nokia\929.jpg" />
+    <Content Include="Images\PhoneImage\Nokia\930.jpg" />
+    <Content Include="Images\PhoneImage\Nubia\z11.jpg" />
+    <Content Include="Images\PhoneImage\Nubia\z9.jpg" />
+    <Content Include="Images\PhoneImage\OnePlus\3.jpg" />
+    <Content Include="Images\PhoneImage\OnePlus\o1.jpg" />
+    <Content Include="Images\PhoneImage\OnePlus\op2.jpg" />
+    <Content Include="Images\PhoneImage\OnePlus\x.jpg" />
+    <Content Include="Images\PhoneImage\Oppo\r9.jpg" />
+    <Content Include="Images\PhoneImage\Samsung\A9.jpg" />
+    <Content Include="Images\PhoneImage\Samsung\C5.jpg" />
+    <Content Include="Images\PhoneImage\Samsung\C7.jpg" />
+    <Content Include="Images\PhoneImage\Samsung\J3Pro.jpg" />
+    <Content Include="Images\PhoneImage\Samsung\N7.jpg" />
+    <Content Include="Images\PhoneImage\Samsung\S6.jpg" />
+    <Content Include="Images\PhoneImage\Samsung\S6E.jpg" />
+    <Content Include="Images\PhoneImage\Samsung\S7.jpg" />
+    <Content Include="Images\PhoneImage\Samsung\S7e.jpg" />
+    <Content Include="Images\PhoneImage\Smartisan\jg.jpg" />
+    <Content Include="Images\PhoneImage\Smartisan\t1.jpg" />
+    <Content Include="Images\PhoneImage\Smartisan\t2.jpg" />
+    <Content Include="Images\PhoneImage\Sony\z5.jpg" />
+    <Content Include="Images\PhoneImage\Sony\z5p.jpg" />
+    <Content Include="Images\PhoneImage\TCL\750.jpg" />
+    <Content Include="Images\PhoneImage\Vivo\x6s.jpg" />
+    <Content Include="Images\PhoneImage\Vivo\x7.jpg" />
+    <Content Include="Images\PhoneImage\Vivo\x7p.jpg" />
+    <Content Include="Images\PhoneImage\Vivo\xplay5.jpg" />
+    <Content Include="Images\PhoneImage\ZTE\7.jpg" />
+    <Content Include="Images\PhoneImage\ZTE\axon mini.jpg" />
+    <Content Include="Images\PhoneImage\ZTE\axon.jpg" />
+    <Content Include="Images\PhoneImage\ZUK\z1.jpg" />
+    <Content Include="Images\PhoneImage\ZUK\z2.jpg" />
+    <Content Include="Images\PhoneImage\ZUK\z2pro.jpg" />
+    <Content Include="Images\Picture\UWP之家.png" />
+    <Content Include="Images\Picture\wallhaven-343515.jpg" />
+    <Content Include="Images\Picture\wallhaven-378511.jpg" />
+    <Content Include="Images\Picture\wallhaven-383716.jpg" />
+    <Content Include="Images\Picture\wallhaven-385454.jpg" />
+    <Content Include="Images\Picture\wallhaven-413451.jpg" />
+    <Content Include="Images\Picture\wallhaven-419771.jpg" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Find.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FindViews\Computer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FindViews\Digital.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FindViews\Hardware.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FindViews\Phone.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainViews\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="WindowsMobile, Version=10.0.10240.0">
+      <Name>Windows Mobile Extensions for the UWP %28WindowsMobile, Version=10.0.10240.0%29</Name>
+    </SDKReference>
+    <SDKReference Include="WindowsMobile, Version=10.0.10586.0">
+      <Name>Windows Mobile Extensions for the UWP %28WindowsMobile, Version=10.0.10586.0%29</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
